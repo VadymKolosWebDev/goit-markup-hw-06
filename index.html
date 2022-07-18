@@ -434,9 +434,8 @@
                             <a href="tel:+38 099 111 11 11" class="link-bottom">+38 099 111 11 11</a>
                         </li>
                     </ul>
+            </address>
                 </div>
-                    
-
                 <div class="footer-column column-second">
                     <h3 class="footer-icons-title">присоединяйтесь</h3>
                     <ul class="footer-list-icon">
@@ -474,22 +473,56 @@
                         </li>
                     </ul>
                 </div>
-                
-
-            </address>
+                <div class="footer-column column-second">
+                    <h3 class="footer-icons-title">Подпишитесь на рассылку</h3>
+                    <div class="footer-form-place">
+                        <form class="footer-form">
+                            <input type="email" name="email" class="footer-email" placeholder="E-mail">
+                            <button class="btn-footer-email" type="submit" name="name">
+                                Подписаться
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-
     </footer>
 
-    <!-- Modal content -->
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-box">
-            <button class="modal-btn-close" data-modal-close>
-                <svg class="close-icon">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
+
+            <div class="modal-container">
+                <button class="modal-btn-close" data-modal-close>
+                    <svg class="close-icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <!-- Modal content -->
+                <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+
+                <form class="modal-form">
+                    <label for="name" class="form-place">Имя</label>
+                    <input type="text" id="name"/>
+
+                    <label for="telephone" class="form-place">Телефон</label>
+                    <input type="tel" id="telephone"/>
+
+                    <label for="mail" class="form-place">Почта</label>
+                    <input type="email" id="mail"/>
+
+                    <label for="feedback" class="form-place">Комментарий</label>
+                    <textarea id="feedback" class="form-feedback"></textarea>
+
+                    <input type="checkbox" name="hobby" id="privacy" value="reading" />
+                    <label for="privacy" class="form-place">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></label>
+
+                    <button type="submit">Отправить</button>
+                </form>
+
+            </div>
+
         </div>
     </div>
 
