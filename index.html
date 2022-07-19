@@ -503,22 +503,52 @@
                 <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
 
                 <form class="modal-form">
-                    <label for="name" class="form-place">Имя</label>
-                    <input type="text" id="name"/>
+                    <ul class="form-list">
+                        <li class="form-text-item">
+                            <label for="name" class="form-place-title">Имя</label>
+                            <div class="form-icon-position">
+                                <input type="text" id="name" class="form-place form-text"/>
+                                <svg class="form-icon form-name">
+                                    <use href="./images/icons.svg#icon-name"></use>
+                                </svg>
+                            </div>
+                        </li>
 
-                    <label for="telephone" class="form-place">Телефон</label>
-                    <input type="tel" id="telephone"/>
+                        <li class="form-text-item">
+                            <label for="telephone" class="form-place-title">Телефон</label>
+                            <div class="form-icon-position ">
+                                <input type="tel" id="telephone" class="form-place form-text"/>
+                                <svg class="form-icon form-phone">
+                                    <use href="./images/icons.svg#icon-phone-form"></use>
+                                </svg>
+                            </div>
+                        </li>
 
-                    <label for="mail" class="form-place">Почта</label>
-                    <input type="email" id="mail"/>
+                        <li class="form-text-item">
+                            <label for="mail" class="form-place-title">Почта</label>
+                            <div class="form-icon-position">
+                                <input type="email" id="mail" class="form-place form-text"/>
+                                <svg class="form-icon form-evenlope">
+                                    <use href="./images/icons.svg#icon-evenlope-form"></use>
+                                </svg>
+                            </div>
+                        </li>
 
-                    <label for="feedback" class="form-place">Комментарий</label>
-                    <textarea id="feedback" class="form-feedback"></textarea>
+                        <li class="form-text-item">
+                            <label for="feedback" class="form-place-title">Комментарий</label>
+                            <textarea id="feedback" placeholder="Введите текст" class="form-feedback form-text"></textarea>
+                        </li>
 
-                    <input type="checkbox" name="hobby" id="privacy" value="reading" />
-                    <label for="privacy" class="form-place">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></label>
+                        <li class="form-checkbox">
+                            <input type="checkbox" name="hobby" id="privacy" value="reading" />
+                            <label for="privacy" class="form-title-privacy">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора</a></label>
+                        </li>
 
-                    <button type="submit">Отправить</button>
+                        <li class="form-submit">
+                            <button type="submit" class="btn-modal-submit">Отправить</button>
+                        </li>
+                    </ul>
+
                 </form>
 
             </div>
