@@ -949,6 +949,7 @@ footer {
 
 
 .form-icon{
+	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	left: 5%;
@@ -990,10 +991,12 @@ footer {
 	border-color: var(--accent-color);
 }
 
-.form-icon-position:hover .form-icon,
-.form-icon-position:focus .form-icon{
+.form-place:hover+.form-icon,
+.form-place:focus+.form-icon{
 	fill: var(--accent-color);
 }
+
+.form-text:hover
 
 .form-feedback {
 	padding-left: 16px;
